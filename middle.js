@@ -22,10 +22,16 @@ const assertArraysEqual = function(array1, array2) {
 
 const middle = function(array) {
   let mid = [];
-  if (array.length < 1 || array.length % 2 === 0) {
+  if (array.length <= 2) {
     return mid;
-  } else {
-    mid.push(array[Math.floor(array.length / 2)]);
+  }else{
+    if(array.length % 2 === 0){
+
+      mid.push(array[Math.floor(array.length / 2)-1]);
+      mid.push(array[Math.floor(array.length / 2)]);
+    }else{
+     mid.push(array[Math.floor(array.length / 2)]);
+    }
     return mid;
   }
 };
@@ -34,4 +40,5 @@ assertArraysEqual([], []);
 assertArraysEqual(middle([1]), []);
 assertArraysEqual(middle([1, 2]), []);
 assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [4]);
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
