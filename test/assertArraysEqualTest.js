@@ -1,4 +1,5 @@
 const assertArraysEqual = require('../assertArraysEqual.js');
+const assert = require('mocha').assert;
 
 let arr1 = [1, 2, 3];
 let arr2 = [1, 2, 3];
