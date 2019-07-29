@@ -20,6 +20,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
+// include is pretty new may not be browser compatible
 // const without = function(array1, array2){
 //   let newArray = [];
 
@@ -30,7 +31,7 @@ const assertArraysEqual = function(array1, array2) {
 //   }
 //   return newArray;
 // };
-
+//
 
 const without = function(array1, array2) {
   let newArray = [];
