@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@scottroberts0/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide: A homemade copy of the lodash library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "mocha"
@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/ScottRoberts0/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name" : "Scott Roberts"
+    ,"email" : "sroberts.kia@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ScottRoberts0/lotide/issues"
